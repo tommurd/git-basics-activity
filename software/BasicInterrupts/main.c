@@ -27,11 +27,11 @@ int main(void)
     		flag_down =0;
     	}
     	if (flag_up){
-    		counter++;
+    		counter=+2;
     		flag_up = 0; //reset
     	}
     	if (flag_down){
-    		counter--;
+    		counter=-2;
     		flag_down = 0; // reset
     	}
     	IOWR(LEDR_BASE,0,counter);
